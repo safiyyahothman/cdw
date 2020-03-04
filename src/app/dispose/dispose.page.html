@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>DISPOSE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+  <img src="/assets/dispose2.png" alt=""/>
+      <div class="ion-text-center">
+      <ion-card-title></ion-card-title>
+      <ion-card-subtitle><i>" Be kind to the earth, save the environment and disposed items to the required place "</i></ion-card-subtitle>
+    </div></ion-card-header>
+  </ion-card>
+  <div class="ion-text-center">
+  <ion-label>DISPOSING DETAILS</ion-label></div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Category</ion-label>
+      <ion-select placeholder="Select category">
+        <ion-select-option value="w">Women</ion-select-option>
+        <ion-select-option value="m">Men</ion-select-option>
+        <ion-select-option value="c">Children</ion-select-option>
+        <ion-select-option value="i">Infant</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Weight</ion-label>
+      <ion-select placeholder="Select kg">
+        <ion-select-option value="1-5">1 - 5 kg</ion-select-option>
+        <ion-select-option value="6-10">6 - 10 kg</ion-select-option>
+        <ion-select-option value="11-15">11 - 15 kg</ion-select-option>
+        <ion-select-option value="16-20">16 - 20 kg</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dispose Centre</ion-label>
+      <ion-select placeholder="Select centre">
+        <ion-select-option value="h&m">H&M</ion-select-option>
+        <ion-select-option value="Makna">Makna's Clothes</ion-select-option>
+        <ion-select-option value="kloth">Kloth Care</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Preferable: </ion-label>
+        <ion-select placeholder="Select one">
+          <ion-select-option value="">Pickup</ion-select-option>
+          <ion-select-option value="Makna">Self-delivery</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+    <ion-radio-group value="pickupTime">
+      <ion-list-header>
+        <ion-label>Select pickup day & time :</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Saturday , 10 am</ion-label>
+        <ion-radio slot="start" value="saturday"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Sunday , 10 am</ion-label>
+        <ion-radio slot="start" value="sunday"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Wednesday , 10 am</ion-label>
+        <ion-radio slot="start" value="wenesday"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-button (click)="openDelivery()" routerLink ="/delivery" routerDirection="forward" expand="block" color="secondary">NEXT</ion-button>
+
+</ion-content>

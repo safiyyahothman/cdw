@@ -1,0 +1,7 @@
+{
+  "name": "CleardeWahina",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
