@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
+//import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { IonicModule } from '@ionic/angular';
 
 import { RecyclingcentrePageRoutingModule } from './recyclingcentre-routing.module';
@@ -24,6 +24,6 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [RecyclingcentrePage],
-  providers: [Geolocation]
+  //providers: [Geolocation]
 })
 export class RecyclingcentrePageModule {}

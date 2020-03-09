@@ -7,7 +7,7 @@ declare var google;
   templateUrl: './recyclingcentre.page.html',
   styleUrls: ['./recyclingcentre.page.scss'],
 })
-export class RecyclingcentrePage implements OnInit, AfterViewInit {
+export class RecyclingcentrePage implements OnInit /*, AfterViewInit */{
   latitude: any;
   longitude: any;
   @ViewChild('mapElement',{static: false}) mapNativeElement: ElementRef;
@@ -16,7 +16,7 @@ export class RecyclingcentrePage implements OnInit, AfterViewInit {
 
   ngOnInit() {
   }
-
+/** 
   ngAfterViewInit(): void {
     this.recyclingcentre.getCurrentPosition().then( onfulfilled,(resp) => {
       this.latitude = resp.coords.latitude;
@@ -41,5 +41,6 @@ export class RecyclingcentrePage implements OnInit, AfterViewInit {
   getCurrentPosition() {
     throw new Error("Method not implemented.");
   }
-}
+}**/
 
+}

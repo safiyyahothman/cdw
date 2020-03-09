@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home', /*login*/
+    redirectTo: 'login', /*login*/
     pathMatch: 'full'
   },
   {
@@ -48,13 +48,17 @@ const routes: Routes = [
     loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
   },
   {
-    path: 'recyclingbin',
-    loadChildren: () => import('./recyclingbin/recyclingbin.module').then( m => m.RecyclingbinPageModule)
-  },
-  {
     path: 'recyclingcentre',
     loadChildren: () => import('./recyclingcentre/recyclingcentre.module').then( m => m.RecyclingcentrePageModule)
+  },  {
+    path: 'userdetailregist',
+    loadChildren: () => import('./userdetailregist/userdetailregist.module').then( m => m.UserdetailregistPageModule)
+  },
+  {
+    path: 'resetpassword',
+    loadChildren: () => import('./resetpassword/resetpassword.module').then( m => m.ResetpasswordPageModule)
   }
+
 ];
 
 @NgModule({

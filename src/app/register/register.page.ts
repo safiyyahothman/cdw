@@ -58,8 +58,12 @@ export class RegisterPage implements OnInit {
      })
   }
  
-  goLoginPage(){
+  goLoginPage(){ //from register to login
     this.navCtrl.navigateBack('');
+  }
+
+  goUserDetailPage(){ //from regist auth to regist user detail
+    this.navCtrl.navigateBack('/userdetailregist');
   }
 
 }
